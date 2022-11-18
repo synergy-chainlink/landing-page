@@ -69,13 +69,10 @@ canvas {
 /* RIGHT COLUMN */
 
 .slogan {
-  /* background: rgba(214, 237, 255, .1);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px); */
-  border-radius: 5px;
-  color: white;
-  background: #808A9F;
-  border: white solid 1px;
+  border-bottom: white solid 1px;
+  color: white; 
+  margin-left: 10%;
+  text-align: end;
 }
 
 .slogan .text {
@@ -86,9 +83,9 @@ canvas {
   padding: 0;
   margin: 0;
 }
+
 .btn-block {
   display: flex;
-  flex-direction: column;
 }
 
 a, u {
@@ -98,54 +95,19 @@ a, u {
 .btn {
   margin-top: 5px;
   display: inline-block;
-  padding: 10px 20px;
+  width: 150px;
+  padding: 10px 0px;
   color: white;
   border-bottom: white solid 1px;
   margin-left: auto;
   cursor: pointer;
-}
-
-.list {
-  padding-top: 15px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.list .item {
   background: #808A9F;
-  border: 1px white solid;
-  border-radius: 3px;
-  padding: 10px;
+  border: solid 1px white;
+  text-align: center;
+  border-radius: 5px;
   margin-right: 5px;
-  margin-top: 5px;
-  /* height: 40px; */
-
 }
 
-.tippy-box[data-theme~='tomato'] {
-  background-color: #F5F0F6;
-  color:#2B2D42
-  /* color: yellow; */
-  /* display: none; */
-  /* padding: 5px;
-  border-radius: 5px; */
-}
-
-.tippy-box[data-theme~='tomato'][data-placement^='top']>.tippy-arrow::before {
-  border-top-color: #F5F0F6;
-}
-
-.tippy-box[data-theme~='tomato'][data-placement^='bottom']>.tippy-arrow::before {
-  border-bottom-color: #F5F0F6;
-}
-
-.tippy-box[data-theme~='tomato'][data-placement^='left']>.tippy-arrow::before {
-  border-left-color: #F5F0F6;
-}
-
-.tippy-box[data-theme~='tomato'][data-placement^='right']>.tippy-arrow::before {
-  border-right-color: #F5F0F6;
-}
 
 /* ТАЙМЛАЙН */
 
@@ -200,26 +162,9 @@ a, u {
   margin-left: 25px;
 }
        
-.arctitect {
-  z-index: 20;
-  margin: 10px;
-  height: 97vh;
-  background: #808A9F;
-  padding: 20px;
-  box-sizing: border-box;
-  /* background-color: #EAEFBD; */
-  color: white;
-  border: 1px solid white;
-  border-radius: 5px;
-}
 
-.architecture-img {
-  margin-top: 40px;
-  width: 70%;
-  margin-left: 15%;
-}
 
-@media (max-width: 1000px) {
+@media (max-width: 600px) {
 
   .canvas {
     visibility: hidden;

@@ -1,11 +1,14 @@
 {
+  "homepage": "https://github.com/synergy-chainlink/landing-page",
   "name": "3d-particles",
   "version": "1.0.1",
   "source": "src/index.html",
   "license": "MIT",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "start": "parcel serve src/index.html --port 8090 --open",
-    "build": "rm -rf ./dist; parcel build src/index.html --public-url '.' --no-source-maps"
+    "build": "parcel build src/index.html --public-url ./ --no-source-maps"
   },
   "devDependencies": {
     "@parcel/transformer-glsl": "^2.7.0",
